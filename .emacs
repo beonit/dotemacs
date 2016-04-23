@@ -17,8 +17,8 @@
  '(ecb-layout-window-sizes nil)
  '(ecb-options-version "2.40")
  '(eclim-eclipse-dirs "/opt/eclipse")
- '(eclim-executable "/opt/eclipse/eclim")
- '(eclimd-executable "/opt/eclipse/eclimd")
+ '(eclim-executable "/home/owner/.eclipse/org.eclipse.platform_4.5.2_1473617060_linux_gtk_x86_64/eclim")
+ '(eclimd-executable "/home/owner/.eclipse/org.eclipse.platform_4.5.2_1473617060_linux_gtk_x86_64/eclimd")
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
@@ -35,10 +35,10 @@
 (add-to-list 'package-archives
              '("elpy" . "https://jorgenschaefer.github.io/packages/"))
 
-(setq url-proxy-services
-   '(("no_proxy" . "^\\(localhost\\|10.*\\)")
-     ("http" . "168.219.61.252:8080")
-     ("https" . "168.219.61.252:8080")))
+;; (setq url-proxy-services
+;;    '(("no_proxy" . "^\\(localhost\\|10.*\\)")
+;;      ("http" . "168.219.61.252:8080")
+;;      ("https" . "168.219.61.252:8080")))
 (setenv "PATH" (concat (getenv "PATH")
 			 ";~/.emacs.d/bin/"))
 (setq default-input-method "korean-hangul")
@@ -114,7 +114,7 @@
 (load-file "~/.emacs.d/languages/java.el")
 (load-file "~/.emacs.d/languages/xml.el")
 
-(require 'dwim-compile)
+;; (require 'dwim-compile)
 
 (setq auto-mode-alist
  (mapcar 'purecopy
